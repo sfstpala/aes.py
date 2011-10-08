@@ -42,6 +42,7 @@ encryption:
  - Integrity (via sha256)
  - Key stretching (salted, iterated sha256)
  - Nice encoding
+ - Length hiding (via padding + random data)
 
 http://en.wikipedia.org/wiki/HMAC  
 http://en.wikipedia.org/wiki/Key_stretching
