@@ -7,13 +7,31 @@ in CBC mode.
 > **Warning**  
 > This code needs thorough peer-review before you can safely use it in production
 
-http://code.google.com/p/slowaes/
+## Example Usage
+
+    >>> import aes
+    >>> secret = aes.encrypt("attack at dawn", "supersecret")
+    >>> print(aes.decrypt(secret, "supersecret"))
+    attack at dawn
+
+The ciphertext, `secret`, looks like this:
+
+    gANDpoADKENguLpucah8dxYR8egJmzL7s9oR8g7Q39jVWbD1WEwva3GVb6tKZ2UP
+    TXdGiV5EwWSdDEbwg6wvQSHl7zCkxGzXqneIk9Lu1KuFAk6YOJ303dvJEUIH7gnh
+    nIxtBbhWxbvpcQBDIHppHW1vpTBDpf+PInSBRfB0GEIvFCpGONvkmx7pGpE4cQFN
+    ACBDEJw3TVTqpIoDNIv7lMsbSoFxAnRxAy5xAEMgd4YW5L/4+XLIvDveYgaVTAhL
+    kbXeOoXmTwGUGdGcx9lxAVhAAAAAOGJmMWNmYmFlZjhjZjViOTg4ZTBjYmRmNmI5
+    ZTJjOTY0Y2NhNWMwOTgyYTQ2Mzk0OWIyY2NkMTNjNDliNmJjOHECh3EDLg==
+
+
+## Technical details
 
 The AES class is forked from the SlowAES project, and
 completely refactored for pep8 compliance. I've thrown
 out SlowAES's CBC Mode of Operation and written it from
 scratch, to make it more readable and much shorter.
 
+http://code.google.com/p/slowaes/  
 http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Cipher-block_chaining_.28CBC.29
 
 Additionally, this module has encrypt() and decrypt()
