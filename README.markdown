@@ -4,6 +4,9 @@ Based on parts of the SlowAES project, this module
 lets you encrypt arbitrary python objects with AES256
 in CBC mode.
 
+> **Warning**  
+> This code needs thorough peer-review before you can safely use it in production
+
 http://code.google.com/p/slowaes/
 
 The AES class is forked from the SlowAES project, and
