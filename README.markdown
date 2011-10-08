@@ -22,7 +22,7 @@ encryption:
  - Key stretching (salted, iterated sha256)
  - Nice encoding
 
-http://en.wikipedia.org/wiki/HMAC
+http://en.wikipedia.org/wiki/HMAC  
 http://en.wikipedia.org/wiki/Key_stretching
 
 You can call `encrypt()` with just two arguments:
